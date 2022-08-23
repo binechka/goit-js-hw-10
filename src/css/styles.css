@@ -45,3 +45,11 @@ body {
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
 }
+
+.country-list {
+  color: azure;
+}
+
+.country-info {
+  color: azure;
+}

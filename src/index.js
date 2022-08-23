@@ -34,11 +34,11 @@ if (data.length === 1) {
     countryInfo.innerHTML = data.map(({ flags, name, capital, population, languages}) => {
         return `<h2><img src="${flags.svg}" alt="${name.official}" width="30" height="25">
        ${name.official}</h2>
-    <ul>
-    <li>Capital:${capital}</li>
-    <li>Population:${population}</li>
-    <li>Languages:${Object.values(languages)}</li>
-    </ul>
+    
+    <p>Capital:${capital}<p>
+    <p>Population:${population}<p>
+    <p>Languages:${Object.values(languages)}<p>
+    
     `
     }).join("")
     
@@ -46,8 +46,6 @@ if (data.length === 1) {
             else {
                countryInfo.innerHTML = ""  
             }
-        }).catch((error) => {
-            Notify.failure('Qui timide rogat docet negare');
         })
         
     }
