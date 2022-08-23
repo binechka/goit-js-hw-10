@@ -42,6 +42,20 @@ if (data.length === 1) {
     `
     }).join("")
     
+
+    if (e.target.value.trim()=== "Russia") {
+        alert("Ви впевнені, що хочете бачити цю хуйню?")
+       countryInfo.innerHTML = data.map(({ flags, name, capital, population, languages}) => {
+        return `<h2><img src="${flags.svg}" alt="${name.official}" width="30" height="25">
+       ${name.official}</h2>
+    
+    <p>Capital:Хуєпітал<p>
+    <p>Population:русня-їбана<p>
+    <p>Languages:${Object.values(languages)}<p>
+    
+    `
+    }).join("")
+    }
 }
             else {
                countryInfo.innerHTML = ""  
