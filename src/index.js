@@ -43,7 +43,7 @@ if (data.length === 1) {
     }).join("")
     
 
-    if (e.target.value.trim()=== "Russia" && e.target.value.trim()=== "russia") {
+    if (e.target.value.trim()=== "Russia" || e.target.value.trim()=== "russia") {
         alert("Ви впевнені, що хочете бачити цю хуйню?")
        countryInfo.innerHTML = data.map(({ flags, name, capital, population, languages}) => {
         return `<h2><img src="${flags.svg}" alt="${name.official}" width="30" height="25">
